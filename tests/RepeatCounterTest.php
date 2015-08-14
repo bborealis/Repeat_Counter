@@ -68,6 +68,17 @@
             $this->assertEquals("2", $result);
         }
 
+        //7. User enters nothing and a string of words: "a A" and gets back "Please enter a valid word.". This validates the search.
+        function test_countsRepeats_emptyWord () {
+            $test_RepeatCounter = new RepeatCounter;
+            $word = " ";
+            $string_of_words = "a A";
+
+            $result = $test_RepeatCounter->countsRepeats($word, $string_of_words);
+
+            $this->assertEquals("Please enter a word", $result);
+        }
+
 
     }
 ?>

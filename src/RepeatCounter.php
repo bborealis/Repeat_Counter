@@ -12,17 +12,27 @@
             $score = 0;
             //begin foreach loop
             foreach ($seperated_string_of_words as $text) {
+
                 //if $text equals the original $word...
-                if($word === $text) {
+                if ($word === $text) {
                     //add 1 to score
                     $score = $score + 1;
-                }
+                    }
             }
             //end foreach loop
+
+            //This isn't working right now but it is supposed to check if $word is empty and if it is to return "Please enter a word". Currently if $word is empty and $string_of_words is empty it returns 1 match which isn't correct. For some reason it  is passing the 7th test??
+            $empty_word = " ";
+            if($word === $empty_word) {
+                $empty = "Please enter a word";
+                return $empty;
+
+            } else {
             // strval() converts the score number into a string
             $score = strval($score);
             //return the total number of matching words
             return $score;
+        }
         }
     }
 ?>

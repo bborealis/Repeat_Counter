@@ -24,7 +24,7 @@ _This project makes use of PHP, the testing framework [PHPUnit](https://phpunit.
 
 ## To Do
 
-__
+_Get final test to pass: searching for nothing results in "Please enter a word"._
 
 
 ### Legal

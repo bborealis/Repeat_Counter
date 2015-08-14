@@ -4,3 +4,4 @@
 4. User enters word: "a" and a string of words: "a ba a" and gets back "2". This checks that the app can evaluate three different words.
 5. User enters word: "a" and a string of words: "a!" and gets back "1". This checks that the app can sperate certain characters from a word so that it would be able to correctly evaluate a sentence.
 6. User enters word: "A" and a string of words: "a A" and gets back "2". This checks that the app can work for uppercase and lower case.
+7. User enters nothing and a string of words: "a A" and gets back "Please enter a valid word.". This validates the search.
