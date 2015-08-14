@@ -25,6 +25,17 @@
             $this->assertEquals("0", $result);
         }
 
+        //3. User enters word: "a" and a string of words: "a ba" and gets back "1". This check that the app can evaluate two different words.
+        function test_countsRepeats_twoWordDifferent () {
+            $test_RepeatCounter = new RepeatCounter;
+            $word = "a";
+            $string_of_words = "a ba";
+
+            $result = $test_RepeatCounter->countsRepeats($word, $string_of_words);
+
+            $this->assertEquals("1", $result);
+        }
+
     }
 
 
