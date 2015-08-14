@@ -46,7 +46,22 @@
 
             $this->assertEquals("2", $result);
         }
+        //5. User enters word: "a" and a string of words: "a!" and gets back "1". This checks that the app can sperate certain characters from a word so that it would be able to correctly evaluate a sentence.
+        function test_countsRepeats_specialCharacters () {
+            $test_RepeatCounter = new RepeatCounter;
+            $word = "a";
+            $string_of_words = "a!";
+
+            $result = $test_RepeatCounter->countsRepeats($word, $string_of_words);
+
+            $this->assertEquals("1", $result);
+        }
+
+
+
+
+
+
+
     }
-
-
 ?>
