@@ -57,10 +57,16 @@
             $this->assertEquals("1", $result);
         }
 
+        //6. User enters word: "A" and a string of words: "a A" and gets back "2". This checks that the app can work for uppercase and lower case.
+        function test_countsRepeats_cases () {
+            $test_RepeatCounter = new RepeatCounter;
+            $word = "A";
+            $string_of_words = "a A";
 
+            $result = $test_RepeatCounter->countsRepeats($word, $string_of_words);
 
-
-
+            $this->assertEquals("2", $result);
+        }
 
 
     }
