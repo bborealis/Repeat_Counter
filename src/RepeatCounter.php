@@ -31,23 +31,3 @@
 
 
 ?>
-
-// $characters = str_split($text);
-// print_r ($characters);
-// foreach ($characters as $character) {
-//
-//     if($character == $ignore_characters) {
-//         $new_characters = array_pop($characters);
-//         $characters = implode($new_characters);
-//     }
-//
-//     if($character != $ignore_characters) {
-//         $characters = implode($characters);
-//     }
-//
-//
-//     if($word === $characters) {
-//         $score = $score + 1;
-//     }
-//     }
-// }
